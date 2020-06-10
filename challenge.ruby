@@ -1,12 +1,3 @@
-=begin
-- Look at both sets of busy time
-- Save every available time for both people
-  with the interview time
-- Compare both available times and eliminate the ones that are 
-  before the latest starting schedule and after the earliest
-  ending schedule 
-=end
-
 def get_available_time(busy_time, meeting_time, end_time)
 
     available_meeting_times = []
