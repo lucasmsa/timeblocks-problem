@@ -130,7 +130,7 @@ end
 
 
 def get_latest_time(f_person_time, s_person_time)
-    # Get earliest time from a simple set of parameters like "'10:30'", "'10:00'"
+    # Get latest time from a simple set of parameters like "'10:30'", "'10:00'"
     fp_hour = f_person_time.split(':')[0].gsub("'", "").to_i
     sp_hour = s_person_time.split(':')[0].gsub("'", "").to_i
 
