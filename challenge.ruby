@@ -128,6 +128,7 @@ def arrange_meeting_blocks(f_block, s_block, time_bounds)
     return meeting_blocks
 end
 
+
 def get_latest_time(f_person_time, s_person_time)
     # Get earliest time from a simple set of parameters like "'10:30'", "'10:00'"
     fp_hour = f_person_time.split(':')[0].gsub("'", "").to_i
@@ -189,7 +190,6 @@ def check_valid_block(time_block, start_hour, end_hour)
     end
     
     return true
-
 end
 
 
@@ -211,8 +211,3 @@ new_earliest_end_hour = get_earliest_time f_person_end_time, s_person_end_time
 time_bounds = [new_latest_start_hour, new_earliest_end_hour]
 
 p arrange_meeting_blocks ans_1, ans_2, time_bounds
-
-
-
-
-
